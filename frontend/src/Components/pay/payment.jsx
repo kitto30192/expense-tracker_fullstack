@@ -5,10 +5,10 @@ import styled from 'styled-components';
 const Payment = () => {
     const handlePayment = () => {
         const options = {
-            key: 'YOUR_RAZORPAY_KEY', // Replace with your Razorpay key
-            amount: 50000, // Amount in paise (50000 paise = 500 INR)
+            key: 'rzp_test_n7oyecg5pQaOac', // Replace with your Razorpay key
+            amount: 100, // Amount in paise (50000 paise = 500 INR)
             currency: 'INR',
-            name: 'Your Company Name',
+            name: 'finance',
             description: 'Test Transaction',
             handler: function (response) {
                 alert('Payment Success! Payment ID: ' + response.razorpay_payment_id);

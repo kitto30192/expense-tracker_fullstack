@@ -10,7 +10,8 @@ import Expenses from './Components/Expenses/Expenses';
 import { useGlobalContext } from './context/globalContext';
 import Banks from './Components/multipleBanks/Banks';
 import Profile from './Components/profile/Profile';
-import Payo from './Components/pay/Payo';
+import Payo from './Components/pay/payo';
+import Budget from './Components/budget/Budget';
 
 function App() {
   const [active, setActive] = useState(1)
@@ -22,6 +23,8 @@ function App() {
     switch(active){
       case 1:
         return <Profile />
+      // case 2:
+      //     return <Budget />
       case 2:
         return <Dashboard />
       case 3:

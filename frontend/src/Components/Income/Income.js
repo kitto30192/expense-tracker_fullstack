@@ -65,6 +65,7 @@ const IncomeStyled = styled.div`
         }
     }
     .income-content{
+        width : 125vh;
         display: flex;
         gap: 2rem;
         .incomes{

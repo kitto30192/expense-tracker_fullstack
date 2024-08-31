@@ -7,7 +7,14 @@ export const menuItems = [
         icon: transactions,
         link: "/Profile",
     },
-    
+     
+    // {
+    //     id: 2,
+    //     title: "Budget Tracker",
+    //     icon: transactions,
+    //     link: "/Budget",
+    // },
+
     {
         id: 2,
         title: "View Transactions",
