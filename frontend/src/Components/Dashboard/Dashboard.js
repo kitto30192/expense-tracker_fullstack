@@ -5,6 +5,7 @@ import History from '../../History/History';
 import { InnerLayout } from '../../styles/Layouts';
 import { dollar } from '../../utils/Icons';
 import Chart from '../Chart/Chart';
+import './dashboard.css'
 
 function Dashboard() {
     const {totalExpenses,incomes, expenses, totalIncome, totalBalance, getIncomes, getExpenses } = useGlobalContext()
@@ -44,16 +45,35 @@ function Dashboard() {
                     </div>
                     <div className="history-con">
                         <History />
-                        <h2 className="salary-title">Min <span>Salary</span>Max</h2>
-                        <div className="salary-item">
-                            <p>
+                        <h2 className="salary-title">Recipient<span>Amount</span>Status</h2>
+                        <div className='transaction'>
+                            {/* <p>
                                 ${Math.min(...incomes.map(item => item.amount))}
                             </p>
                             <p>
                                 ${Math.max(...incomes.map(item => item.amount))}
-                            </p>
+                            </p> */}
+
+                            <p className='rece'>Spotify</p>
+                            <p className='amount'>799</p>
+                            <p className='sts'>success</p>
                         </div>
-                        <h2 className="salary-title">Min <span>Expense</span>Max</h2>
+                        <div className='transaction'>
+                            <p className='rece'>Dominos</p>
+                            <p className='amount'>299</p>
+                            <p className='sts'>success</p>
+                        </div>
+                        <div className='transaction'>
+                            <p className='rece'> InCars</p>
+                            <p className='amount'>1499</p>
+                            <p className='sts'>success</p>
+                        </div>
+                        <div className='transaction'>
+                            <p className='rece'>hospital</p>
+                            <p className='amount'>1000</p>
+                            <p className='sts'>success</p>
+                        </div>
+                        {/* <h2 className="salary-title">Min <span>Expense</span>Max</h2>
                         <div className="salary-item">
                             <p>
                                 ${Math.min(...expenses.map(item => item.amount))}
@@ -61,7 +81,7 @@ function Dashboard() {
                             <p>
                                 ${Math.max(...expenses.map(item => item.amount))}
                             </p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </InnerLayout>

@@ -8,6 +8,9 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import Income from './Components/Income/Income'
 import Expenses from './Components/Expenses/Expenses';
 import { useGlobalContext } from './context/globalContext';
+import Banks from './Components/multipleBanks/Banks';
+import Profile from './Components/profile/Profile';
+import Payo from './Components/pay/Payo';
 
 function App() {
   const [active, setActive] = useState(1)
@@ -18,13 +21,17 @@ function App() {
   const displayData = () => {
     switch(active){
       case 1:
-        return <Dashboard />
+        return <Profile />
       case 2:
         return <Dashboard />
       case 3:
         return <Income />
       case 4: 
         return <Expenses />
+      case 5: 
+        return <Banks />
+      case 6: 
+        return <Payo />
       default: 
         return <Dashboard />
     }
@@ -36,7 +43,6 @@ function App() {
 
   return (
     <AppStyled bg={bg} className="App">
-      {orbMemo}
       <MainLayout>
         <Navigation active={active} setActive={setActive} />
         <main>

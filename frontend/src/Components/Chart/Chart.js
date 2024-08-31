@@ -47,6 +47,17 @@ function Chart() {
                 tension: .2
             },
             {
+                label: 'UserBanks',
+                data: [
+                    ...incomes.map((income) => {
+                        const {amount} = income
+                        return amount
+                    })
+                ],
+                backgroundColor: 'green',
+                tension: .2
+            },
+            {
                 label: 'Expenses',
                 data: [
                     ...expenses.map((expense) => {

@@ -15,7 +15,7 @@ function Income() {
         <IncomeStyled>
             <InnerLayout>
                 <h1>Incomes</h1>
-                <h2 className="total-income">Total Income: <span>${totalIncome()}</span></h2>
+                <h2 className="total-income">Total Income: <span>Rs. {totalIncome()}</span></h2>
                 <div className="income-content">
                     <div className="form-container">
                         <Form />
@@ -55,7 +55,7 @@ const IncomeStyled = styled.div`
         box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
         border-radius: 20px;
         padding: 1rem;
-        margin: 1rem 0;
+        margin: 1rem 0 ;
         font-size: 2rem;
         gap: .5rem;
         span{
